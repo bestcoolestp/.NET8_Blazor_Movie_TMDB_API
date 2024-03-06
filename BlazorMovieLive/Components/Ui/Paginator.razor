@@ -1,0 +1,14 @@
+﻿<h3>Paginator</h3>
+
+@code {
+	[Parameter]
+	[EditorRequired]
+	public int CurrentPage { get; set; }
+
+	[Parameter]
+	[EditorRequired]
+	public int TotalPages { get; set; }
+
+	[Parameter]
+	public EventCallback<int> OnPageChange { get; set; }
+}
