@@ -39,6 +39,15 @@
 		</div>
 		
 	</div>
+	@if(movies?.TotalPages > 1)
+	{
+		<div class="my-3">
+		<Paginator CurrentPage="movies.Page"
+			TotalPages="movies.TotalPages > 500 ? 500 : movies.TotalPages"
+		/>
+	</div>
+	}
+	
 </div>
 
 
